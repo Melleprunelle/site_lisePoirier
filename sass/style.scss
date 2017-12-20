@@ -1,0 +1,187 @@
+body {
+    background-color: #222;
+    background-image: url(../assets/imgs/confetti.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    header {
+        display: flex;
+        height: 65vh;
+        background-image: url(../assets/imgs/confetti.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        /*
+        background-position: 50% 0%;
+*/
+        div {
+            width: 20%;
+            text-align: center;
+            div {
+                width: 2px;
+                background-color: white;
+                height: 300px;
+                margin: 0 auto;
+            }
+        }
+        article {
+            position: relative;
+            text-align: center;
+            color: white;
+            width: 60%;
+            .ruban {
+                display: block;
+                position: absolute;
+                top: -300px;
+                transform: rotate(180deg);
+            }
+            div {
+                position: relative;
+                width: 100%;
+                .ruban_solo {
+                    display: block;
+                    margin: 0;
+                    margin-left: 72px;
+                    position: absolute;
+                    bottom: 0;
+                }
+                h1 {
+                    font-size: 25em;
+                    font-weight: 800;
+                    letter-spacing: -30px;
+                    margin: 0;
+                    display: inline-block;
+                    margin-top: 75px;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-bottom: 10px solid #FDCC65;
+                    padding: 0px;
+                    height: 475px;
+                }
+                h1:last-child {
+                    height: 375px;
+                    font-size: 18em;
+                    letter-spacing: -25px;
+                    transform: rotate(-2.5deg);
+                    margin-left: -50px;
+                    border-color: #eb5757ff;
+                }
+            }
+            .logo_top {
+                position: absolute;
+                width: 50%;
+                margin-top: 0px;
+                transform: rotate(-2.5deg);
+            }
+        }
+        div:last-child {
+            background-image: url(../assets/imgs/ruban.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            div {
+                height: 75px;
+            }
+            img {
+                width: 25%;
+                transform: rotate(0deg);
+            }
+        }
+    }
+    .relax_conf {
+        display: block;
+        margin: 0 65%;
+        width: 75px;
+    }
+    .triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 40px 25px 0 25px;
+        border-color: #eb5757ff transparent transparent transparent;
+        margin: 0 25%;
+        margin-top: 40px;
+        transform: rotate(15deg);
+    }
+    section ul {
+        padding: 50px 0;
+        margin-bottom: 0px;
+        li {
+            list-style-type: none;
+            width: 6px;
+            height: 300px;
+            margin: 0 auto;
+            position: relative;
+            background-color: white;
+            &:after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+                transform: translateX(-50%);
+                width: 30px;
+                height: 30px;
+                //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+                border-radius: 100%;
+                background: white;
+            }
+        }
+        div {
+            position: absolute;
+            width: 30vw;
+            margin: 0 0 0 50px;
+            background-color: #eb5757ff;
+            bottom: 0;
+            padding: 25px;
+            color: white;
+            h3 {
+                text-transform: uppercase;
+                font-size: 1.3em;
+                margin-bottom: 5px;
+                img {
+                    width: 30px;
+                }
+            }
+            h2 {
+                font-weight: 800;
+                font-size: 1.3em;
+                text-transform: uppercase;
+            }
+            p {
+                font-weight: 300;
+                font-size: 1m;
+            }
+        }
+        .div-left {
+            right: 0;
+            margin: 0 50px;
+            text-align: right;
+        }
+    }
+    footer {
+        width: 100%;
+        height: 300px;
+        background-image: url(../assets/imgs/confetti.svg);
+        background-size: 200%;
+        background-position: center;
+        transform: rotate(180deg);
+        margin: 0;
+    }
+}
+
+.ball {
+    pointer-events: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: transparent;
+    animation: implode 0.5s ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes implode {
+    100% {
+        transform: scale(0)
+    }
+}

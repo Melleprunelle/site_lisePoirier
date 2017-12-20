@@ -1,0 +1,158 @@
+body {
+  background-color: #222;
+  background-image: url(../assets/imgs/confetti.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0; }
+  body header {
+    display: flex;
+    height: 65vh;
+    background-image: url(../assets/imgs/confetti.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+        /*
+        background-position: 50% 0%;
+*/ }
+    body header div {
+      width: 20%;
+      text-align: center; }
+      body header div div {
+        width: 2px;
+        background-color: white;
+        height: 300px;
+        margin: 0 auto; }
+    body header article {
+      position: relative;
+      text-align: center;
+      color: white;
+      width: 60%; }
+      body header article .ruban {
+        display: block;
+        position: absolute;
+        top: -300px;
+        transform: rotate(180deg); }
+      body header article div {
+        position: relative;
+        width: 100%; }
+        body header article div .ruban_solo {
+          display: block;
+          margin: 0;
+          margin-left: 72px;
+          position: absolute;
+          bottom: 0; }
+        body header article div h1 {
+          font-size: 25em;
+          font-weight: 800;
+          letter-spacing: -30px;
+          margin: 0;
+          display: inline-block;
+          margin-top: 75px;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-bottom: 10px solid #FDCC65;
+          padding: 0px;
+          height: 475px; }
+        body header article div h1:last-child {
+          height: 375px;
+          font-size: 18em;
+          letter-spacing: -25px;
+          transform: rotate(-2.5deg);
+          margin-left: -50px;
+          border-color: #eb5757ff; }
+      body header article .logo_top {
+        position: absolute;
+        width: 50%;
+        margin-top: 0px;
+        transform: rotate(-2.5deg); }
+    body header div:last-child {
+      background-image: url(../assets/imgs/ruban.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; }
+      body header div:last-child div {
+        height: 75px; }
+      body header div:last-child img {
+        width: 25%;
+        transform: rotate(0deg); }
+  body .relax_conf {
+    display: block;
+    margin: 0 65%;
+    width: 75px; }
+  body .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px 25px 0 25px;
+    border-color: #eb5757ff transparent transparent transparent;
+    margin: 0 25%;
+    margin-top: 40px;
+    transform: rotate(15deg); }
+  body section ul {
+    padding: 50px 0;
+    margin-bottom: 0px; }
+    body section ul li {
+      list-style-type: none;
+      width: 6px;
+      height: 300px;
+      margin: 0 auto;
+      position: relative;
+      background-color: white; }
+      body section ul li:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background: white; }
+    body section ul div {
+      position: absolute;
+      width: 30vw;
+      margin: 0 0 0 50px;
+      background-color: #eb5757ff;
+      bottom: 0;
+      padding: 25px;
+      color: white; }
+      body section ul div h3 {
+        text-transform: uppercase;
+        font-size: 1.3em;
+        margin-bottom: 5px; }
+        body section ul div h3 img {
+          width: 30px; }
+      body section ul div h2 {
+        font-weight: 800;
+        font-size: 1.3em;
+        text-transform: uppercase; }
+      body section ul div p {
+        font-weight: 300;
+        font-size: 1m; }
+    body section ul .div-left {
+      right: 0;
+      margin: 0 50px;
+      text-align: right; }
+  body footer {
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/imgs/confetti.svg);
+    background-size: 200%;
+    background-position: center;
+    transform: rotate(180deg);
+    margin: 0; }
+
+.ball {
+  pointer-events: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: transparent;
+  animation: implode 0.5s ease-in-out;
+  animation-fill-mode: both; }
+
+@keyframes implode {
+  100% {
+    transform: scale(0); } }
+
+/*# sourceMappingURL=style.css.map */

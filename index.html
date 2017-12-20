@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test 20ANS FACE</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/anicollection.css">
+</head>
+
+<body id="wrap">
+
+    <header>
+        <div>
+            <div></div>
+            <img src="assets/imgs/confetti_solo2.svg" alt="">
+        </div>
+        <article>
+            <img src="assets/imgs/ruban.svg" alt="" class="ruban">
+            <div>
+                <img src="assets/imgs/ruban_solo.svg" alt="" class="ruban_solo rellax" data-rellax-speed="5">
+                <h1>20</h1>
+                <h1>years</h1>
+            </div>
+            <img src="assets/imgs/logo_ex.svg" alt="" class="logo_top">
+        </article>
+        <div>
+            <div></div>
+            <img src="assets/imgs/confetti_solo.svg" alt="">
+        </div>
+    </header>
+    <img src="assets/imgs/confetti_solo3.svg" alt="" class="relax_conf rellax" data-rellax-speed="5">
+    <div class="triangle"></div>
+    <section>
+        <ul>
+            <li data-anijs="if: scroll, on: li, do: bounceInLeft animated, before: $scrollReveal">
+                <div class="div-left" data-anijs="if: scroll, on: window, do: zoomInLeft animated, before: $scrollReveal">
+                    <h3><img src="assets/imgs/icons/gift.svg" alt=""></h3>
+                    <h2>Quel évènement !</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quae eos neque rem blanditiis! Pariatur aliquam est, perferendis, id nihil vero quam minima inventore nam itaque doloribus laborum dolorum, dolores.</p>
+                </div>
+            </li>
+            <li>
+                <div class="div-right" data-anijs="if: scroll, on: window, do: zoomInRight animated, before: $scrollReveal">
+                    <h3><img src="assets/imgs/icons/006-balloon.svg" alt=""></h3>
+                    <h2>Mais c'est quoi ?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quae eos neque rem blanditiis! Pariatur aliquam est, perferendis, id nihil vero quam minima inventore nam itaque doloribus laborum dolorum, dolores.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quae eos neque rem blanditiis! Pariatur aliquam est, perferendis, id nihil vero quam minima inventore nam itaque doloribus laborum dolorum, dolores.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quae eos neque rem blanditiis! Pariatur aliquam est, perferendis, id nihil vero quam minima inventore nam itaque doloribus laborum dolorum, dolores.</p>
+                </div>
+         
+            </li>
+            <li data-anijs="if: scroll, on: li, do: bounceInLeft animated, before: $scrollReveal">
+                <div class="div-left" data-anijs="if: scroll, on: window, do: zoomInLeft animated, before: $scrollReveal">
+                    <h3><img src="assets/imgs/icons/005-fireworks.svg" alt=""></h3>
+                    <h2>Le Programme !</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quae eos neque rem blanditiis! Pariatur aliquam est, perferendis, id nihil vero quam minima inventore nam itaque doloribus laborum dolorum, dolores.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quae eos neque rem blanditiis! Pariatur aliquam est, perferendis, id nihil vero quam minima inventore nam itaque doloribus laborum dolorum, dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure repellendus error distinctio, dolore molestiae dolorum totam vitae. Perferendis sit ipsam ad excepturi fugit doloremque vitae. Perspiciatis quo, ullam tenetur incidunt.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quae eos neque rem blanditiis! Pariatur aliquam est, perferendis, id nihil vero quam minima inventore nam itaque doloribus laborum dolorum, dolores.</p>
+                </div>
+            </li>
+            
+            <li>
+                <img src="assets/imgs/ruban_solo.svg" alt="" class="ruban_solo rellax" data-rellax-speed="5">
+                <div class="div-right" data-anijs="if: scroll, on: window, do: zoomInRight animated, before: $scrollReveal">
+                    <h3><img src="assets/imgs/icons/003-hat.svg" alt=""></h3>
+                    <h2>Mais où ?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident quae eos neque rem blanditiis! Pariatur aliquam est, perferendis, id nihil vero quam minima inventore nam itaque doloribus laborum dolorum, dolores.</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.907782995485!2d-1.6859563485512483!3d48.09272166216083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480edfc463474483%3A0x59e67b37bf053fc8!2sFace+Rennes!5e0!3m2!1sfr!2sfr!4v1513784142722" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </li>
+               <img src="assets/imgs/confetti_solo3.svg" alt="" class="relax_conf rellax" data-rellax-speed="5">
+        </ul>
+    </section>
+    <footer></footer>
+
+
+
+
+    <script src="assets/jquery-3.2.1.min.js"></script>
+    <script src="assets/relax/rellax.min.js"></script>
+    <script src="assets/ani/anijs.js"></script>
+    <script src="assets/ani/anijs-helper-scrollreveal.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+
+
+
+        $(document).ready(function() {
+            var mousePos = {};
+
+            function getRandomInt(min, max) {
+                return Math.round(Math.random() * (max - min + 1)) + min;
+            }
+            $(window).mousemove(function(e) {
+                mousePos.x = e.pageX;
+                mousePos.y = e.pageY;
+            });
+            $(window).mouseleave(function(e) {
+                mousePos.x = -1;
+                mousePos.y = -1;
+            });
+
+            var draw = setInterval(function() {
+                if (mousePos.x > 0 && mousePos.y > 0) {
+                    var range = 15;
+                    var color = "background: rgb(" + 255 + "," + 255 + "," + 255 + ");";
+                    var sizeInt = getRandomInt(10, 15);
+                    size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
+                    var left = "left: " + getRandomInt(mousePos.x - range - sizeInt, mousePos.x + range) + "px;";
+                    var top = "top: " + getRandomInt(mousePos.y - range - sizeInt, mousePos.y + range) + "px;";
+                    var style = left + top + color + size;
+                    $("<div class='ball' style='" + style + "'></div>").appendTo('#wrap').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function() {
+                        $(this).remove();
+                    });
+                }
+            }, 1);
+        });
+    </script>
+</body>
+
+</html>
