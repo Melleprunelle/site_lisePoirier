@@ -12,7 +12,7 @@
   -moz-box-sizing: border-box; }
 
 body {
-  background-color: whitesmoke;
+  background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Dosis";
@@ -22,7 +22,7 @@ body {
     height: 800px;
     background-image: url(../assets/imgs/rainbown.svg);
     background-repeat: no-repeat;
-    background-color: whitesmoke;
+    background-color: white;
     background-position: top right;
     background-attachment: fixed;
     display: flex;
@@ -70,26 +70,28 @@ body {
         margin: 0;
         padding: 0;
         font-size: 10vw;
-        color: crimson;
+        color: #ef658a;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
       body header div h2 {
         font-family: "Dosis";
         font-weight: 700;
         font-size: 3vw;
         margin: 0;
-        color: #222; }
+        color: #111; }
       body header div img:last-child {
         margin-left: 50vw;
         color: darkgoldenrod; }
   body section {
     position: relative;
     display: flex;
-    background-color: #222;
+    background-color: #111;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    padding-top: 5vh;
+    padding-bottom: 5vh; }
     body section .logo {
       margin: 0;
       padding: 0;
@@ -103,55 +105,56 @@ body {
       padding-bottom: 50px;
       border-bottom: 2px solid whitesmoke;
       margin-bottom: 15vh; }
-  body .presentation:before {
-    content: '';
-    position: absolute;
-    top: -100px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 100px 99.2vw 0 0;
-    border-color: transparent #222 transparent transparent; }
-  body .presentation:after {
-    content: '';
-    position: absolute;
-    bottom: -100px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0px 99.2vw 100px 0;
-    border-color: transparent #222 transparent transparent; }
-  body .presentation .logo {
-    margin: 0;
-    padding: 0;
-    width: 12vw; }
-  body .presentation h3 {
-    color: whitesmoke;
-    font-size: 1.5vw;
-    font-weight: 600;
-    width: 50%;
-    text-align: center;
-    padding-bottom: 50px;
-    border-bottom: 2px solid whitesmoke;
-    margin-bottom: 10vh; }
-  body .presentation article {
-    width: 80vw;
-    display: flex;
-    padding-bottom: 10vh; }
-    body .presentation article div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+  body .presentation {
+    /*&:after {
+        content: '';
+        position: absolute;
+        bottom: -100px;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 0px 99.2vw 100px 0;
+        border-color: transparent #111 transparent transparent;
+    }*/ }
+    body .presentation:before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 100px 99.2vw 0 0;
+      border-color: transparent #111 transparent transparent; }
+    body .presentation .logo {
+      margin: 0;
+      padding: 0;
+      width: 12vw; }
+    body .presentation h3 {
+      color: whitesmoke;
+      font-size: 1.5vw;
+      font-weight: 600;
+      width: 50%;
       text-align: center;
-      width: 33.33vw; }
-      body .presentation article div:hover {
-        -webkit-animation-name: tadaa;
-        animation-name: tadaa;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both; }
+      padding-bottom: 50px;
+      border-bottom: 2px solid whitesmoke;
+      margin-bottom: 10vh; }
+    body .presentation article {
+      width: 80vw;
+      display: flex; }
+      body .presentation article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 33.33vw; }
+        body .presentation article div:hover {
+          -webkit-animation-name: tadaa;
+          animation-name: tadaa;
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
 @-webkit-keyframes tadaa {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
@@ -196,19 +199,41 @@ body {
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
-      body .presentation article div img {
-        width: 8vw; }
-      body .presentation article div p {
-        padding: 2vh 4vw;
-        color: whitesmoke;
-        font-size: 1.1vw; }
+        body .presentation article div img {
+          width: 8vw; }
+        body .presentation article div p {
+          padding: 2vh 4vw 0vh 4vw;
+          margin-bottom: 0;
+          color: whitesmoke;
+          font-size: 1.1vw; }
+  body .parallax {
+    height: 300px;
+    width: 100vw;
+    background-color: white;
+    background-image: url(../assets/imgs/memphis-colorful.png);
+    position: inherit;
+    background-image: url(../assets/imgs/rainbown2.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    background-attachment: fixed; }
+  body .parallax2 {
+    height: 300px;
+    width: 100vw;
+    background-color: white;
+    background-image: url(../assets/imgs/memphis-colorful.png);
+    position: inherit;
+    background-image: url(../assets/imgs/rainbown2.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    background-attachment: fixed; }
   body .parcours-pro {
-    background-color: whitesmoke;
-    margin-top: 10vh; }
+    background-color: #111;
+    padding-top: 10vh;
+    overflow-y: hidden; }
     body .parcours-pro h3 {
-      color: #222;
-      border-bottom-color: #222;
-      margin-bottom: 50px; }
+      margin-bottom: 100px; }
     body .parcours-pro .timeline-container {
       max-width: 65vw;
       margin: 0 auto; }
@@ -216,9 +241,8 @@ body {
         content: "";
         width: 3px;
         height: 100%;
-        background: #1C71A4;
+        background: #ef658a;
         left: 50%;
-        top: 0;
         position: absolute; }
       body .parcours-pro .timeline-container div:first-child:after {
         content: "";
@@ -236,7 +260,7 @@ body {
           display: block;
           clear: both; }
         body .parcours-pro .timeline-container div:first-child .timeline-item div:first-child {
-          background: #1C71A4;
+          background: #ef658a;
           width: 50px;
           height: 50px;
           position: absolute;
@@ -250,14 +274,16 @@ body {
           border-radius: 50%; }
           body .parcours-pro .timeline-container div:first-child .timeline-item div:first-child .fa {
             position: relative;
-            top: 13px;
-            left: 14px;
-            font-size: 24px;
-            color: #fff; }
+            top: 15px;
+            left: 15px;
+            font-size: 25px;
+            color: white; }
         body .parcours-pro .timeline-container div:first-child .timeline-item div:last-child {
           width: 45%;
-          background: #fff;
-          padding: 20px;
+          background: white;
+          /*
+                                  padding: 20px;
+          */
           box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1); }
           body .parcours-pro .timeline-container div:first-child .timeline-item div:last-child:before {
             content: '';
@@ -268,7 +294,19 @@ body {
             height: 0;
             border-top: 7px solid transparent;
             border-bottom: 7px solid transparent;
-            border-left: 7px solid #1C71A4; }
+            border-left: 7px solid #ef658a; }
+          body .parcours-pro .timeline-container div:first-child .timeline-item div:last-child h2 {
+            color: white;
+            background-color: #ef658a;
+            width: 100%;
+            padding: 20px;
+            margin-top: 0; }
+          body .parcours-pro .timeline-container div:first-child .timeline-item div:last-child p {
+            padding: 15px 20px;
+            margin: 0; }
+          body .parcours-pro .timeline-container div:first-child .timeline-item div:last-child span {
+            padding: 0 10px 0 0;
+            font-weight: 600; }
         body .parcours-pro .timeline-container div:first-child .timeline-item .right {
           float: right; }
     body .parcours-pro #timeline .timeline-item .timeline-content.right:before {
@@ -276,7 +314,7 @@ body {
       right: 45%;
       left: inherit;
       border-left: 0;
-      border-right: 7px solid #1C71A4; }
+      border-right: 7px solid #ef658a; }
   body .star-outside {
     width: 2vw;
     margin: 0vw 10vw; }
@@ -300,7 +338,7 @@ body {
         left: 10%;
         margin-left: -6px;
         border-left: 0;
-        border-right: 7px solid #1C71A4;
+        border-right: 7px solid crimson;
     }
     #timeline .timeline-item .timeline-icon {
         left: 0;
