@@ -12,280 +12,177 @@
   -moz-box-sizing: border-box; }
 
 body {
-  background-color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: "Dosis";
   margin: 0;
-  padding: 0; }
-  body header {
-    height: 800px;
-    background-image: url(../assets/imgs/rainbown.svg);
-    background-repeat: no-repeat;
-    background-color: white;
-    background-position: top right;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    body header div {
-      margin-bottom: 5%;
-      margin-left: 10vw;
-      -webkit-animation-name: zoomInDown;
-      animation-name: zoomInDown;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      -webkit-animation-delay: 0.3s;
-      animation-delay: 1s; }
-@-webkit-keyframes zoomInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
-@keyframes zoomInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-  60% {
-    opacity: 1;
-    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
-      body header div h1 {
-        font-family: "Lovelo-black";
-        margin: 0;
-        padding: 0;
-        font-size: 10vw;
-        color: #ef658a;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-      body header div h2 {
-        font-family: "Dosis";
-        font-weight: 700;
-        font-size: 3vw;
-        margin: 0;
-        color: #111; }
-      body header div img:last-child {
-        margin-left: 50vw;
-        color: darkgoldenrod; }
+  padding: 0;
+  background-color: #111; }
+  body header,
   body section {
-    position: relative;
+    height: 75vh;
+    background-image: url(../assets/imgs/rainbow-circle.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100%;
     display: flex;
-    background-color: #111;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Roboto"; }
+    body header .separator,
+    body section .separator {
+      opacity: 0.4;
+      width: 2px;
+      height: 25vh;
+      background-color: grey;
+      margin: 4vh auto 4vh auto; }
+    body header span,
+    body section span {
+      padding: 3vh;
+      width: 50vw;
+      font-size: 1.5vw;
+      letter-spacing: 1vw;
+      text-align: right;
+      text-transform: uppercase; }
+      body header span img,
+      body section span img {
+        width: 5vw;
+        vertical-align: bottom;
+        margin: 0 1vw; }
+    body header h1,
+    body section h1 {
+      font-family: "Lovelo-Black";
+      font-size: 7vw;
+      letter-spacing: 1vw;
+      margin: 1vh; }
+    body header h2,
+    body section h2 {
+      margin: 0;
+      width: 30vw;
+      text-align: right;
+      font-weight: 300;
+      font-size: 1.2vw; }
+  body section .separator {
+    opacity: 0.4;
+    width: 2px;
+    height: 25vh;
+    background-color: grey;
+    margin: 4vh auto 4vh auto; }
+  body section span {
+    padding: 3vh;
+    width: 50vw;
+    font-size: 1.5vw;
+    letter-spacing: 1vw;
+    text-align: right;
+    text-transform: uppercase; }
+    body section span img {
+      width: 5vw;
+      vertical-align: bottom;
+      margin: 0 1vw; }
+  body section h1 {
+    font-family: "Lovelo-Black";
+    font-size: 7vw;
+    letter-spacing: 1vw;
+    margin: 1vh; }
+  body section h2 {
     margin: 0;
-    padding: 0;
-    padding-top: 5vh;
-    padding-bottom: 5vh; }
-    body section .logo {
-      margin: 0;
-      padding: 0;
-      width: 12vw; }
-    body section h3 {
-      color: whitesmoke;
-      font-size: 1.5vw;
+    width: 30vw;
+    text-align: right;
+    font-weight: 300;
+    font-size: 1.2vw; }
+  body .present {
+    height: auto;
+    background-image: url(../assets/imgs/rainbow-circle2.svg);
+    font-weight: 300;
+    background-position: top center;
+    background-size: 100%; }
+    body .present h2 {
       font-weight: 600;
-      width: 50%;
+      width: 20vw;
       text-align: center;
-      padding-bottom: 50px;
-      border-bottom: 2px solid whitesmoke;
-      margin-bottom: 15vh; }
-  body .presentation {
-    /*&:after {
-        content: '';
-        position: absolute;
-        bottom: -100px;
-        width: 0px;
-        height: 0px;
-        border-style: solid;
-        border-width: 0px 99.2vw 100px 0;
-        border-color: transparent #111 transparent transparent;
-    }*/ }
-    body .presentation:before {
-      content: '';
-      position: absolute;
-      top: -100px;
-      width: 0px;
-      height: 0px;
-      border-style: solid;
-      border-width: 100px 99.2vw 0 0;
-      border-color: transparent #111 transparent transparent; }
-    body .presentation .logo {
-      margin: 0;
-      padding: 0;
-      width: 12vw; }
-    body .presentation h3 {
-      color: whitesmoke;
-      font-size: 1.5vw;
-      font-weight: 600;
-      width: 50%;
+      margin: 1vh auto;
+      font-size: 1.5vw; }
+    body .present p {
+      width: 45vw;
       text-align: center;
-      padding-bottom: 50px;
-      border-bottom: 2px solid whitesmoke;
-      margin-bottom: 10vh; }
-    body .presentation article {
+      margin: 0vh auto; }
+    body .present article {
       width: 80vw;
-      display: flex; }
-      body .presentation article div {
+      display: flex;
+      margin-bottom: 20vh; }
+      body .present article div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
         width: 33.33vw; }
-        body .presentation article div:hover {
-          -webkit-animation-name: tadaa;
-          animation-name: tadaa;
-          -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-          -webkit-animation-fill-mode: both;
-          animation-fill-mode: both; }
-@-webkit-keyframes tadaa {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); }
-  10%,
-                        20% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }
-  30%,
-                        50%,
-                        70%,
-                        90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
-  40%,
-                        60%,
-                        80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
-@keyframes tadaa {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); }
-  10%,
-                        20% {
-    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }
-  30%,
-                        50%,
-                        70%,
-                        90% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
-  40%,
-                        60%,
-                        80% {
-    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
-        body .presentation article div img {
-          width: 8vw; }
-        body .presentation article div p {
-          padding: 2vh 4vw 0vh 4vw;
-          margin-bottom: 0;
-          color: whitesmoke;
-          font-size: 1.1vw; }
-  body .parallax {
-    height: 300px;
-    width: 100vw;
-    background-color: white;
-    background-image: url(../assets/imgs/memphis-colorful.png);
-    position: inherit;
-    background-image: url(../assets/imgs/rainbown2.svg);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: contain;
-    background-attachment: fixed; }
-  body .parallax2 {
-    height: 300px;
-    width: 100vw;
-    background-color: white;
-    background-image: url(../assets/imgs/memphis-colorful.png);
-    position: inherit;
-    background-image: url(../assets/imgs/rainbown2.svg);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: contain;
-    background-attachment: fixed; }
+        body .present article div img {
+          width: 7vw;
+          margin: 1vw; }
+        body .present article div p {
+          width: 80%;
+          padding: 2vh 0;
+          color: whitesmoke; }
   body .parcours-pro {
-    background-color: #111;
-    padding-top: 10vh;
-    overflow-y: hidden; }
+    height: auto;
+    background-image: none;
+    background-size: 100%;
+    background-position: center top;
+    background-color: ghostwhite; }
+    body .parcours-pro h2 {
+      font-weight: 600;
+      width: 20vw;
+      text-align: center;
+      margin: 0vh auto 1vh auto;
+      font-size: 1.5vw;
+      color: #111; }
     body .parcours-pro h3 {
-      margin-bottom: 100px; }
+      margin-top: 0;
+      padding: 20px;
+      color: ghostwhite;
+      background-color: #111; }
+    body .parcours-pro p {
+      margin: 0;
+      padding: 0;
+      font-weight: 300;
+      color: #111; }
+    body .parcours-pro span {
+      padding: 0 10px 0 0;
+      font-size: 1.3vw;
+      font-weight: 300;
+      letter-spacing: inherit; }
     body .parcours-pro .timeline-container {
       max-width: 65vw;
-      margin: 0 auto; }
-      body .parcours-pro .timeline-container div:first-child:before {
-        content: "";
-        width: 3px;
-        height: 100%;
-        background: #ef658a;
-        left: 50%;
-        position: absolute; }
-      body .parcours-pro .timeline-container div:first-child:after {
-        content: "";
-        clear: both;
-        display: table; }
-      body .parcours-pro .timeline-container div:first-child .timeline-item {
-        margin-bottom: 50px;
+      margin: 0 auto 5vh auto; }
+      body .parcours-pro .timeline-container p {
+        margin: 0;
+        padding: 15px 20px;
+        font-weight: 300;
+        color: whitesmoke; }
+      body .parcours-pro .timeline-container .timeline-item {
         position: relative; }
-        body .parcours-pro .timeline-container div:first-child .timeline-item:before {
+        body .parcours-pro .timeline-container .timeline-item:before {
           content: '';
           display: block;
           clear: both; }
-        body .parcours-pro .timeline-container div:first-child .timeline-item:after {
+        body .parcours-pro .timeline-container .timeline-item:after {
           content: '';
           display: block;
           clear: both; }
-        body .parcours-pro .timeline-container div:first-child .timeline-item div:first-child {
-          background: #ef658a;
-          width: 50px;
-          height: 50px;
+        body .parcours-pro .timeline-container .timeline-item div:first-child {
+          background: #111;
+          width: 2px;
+          height: 100%;
           position: absolute;
           top: 0;
           left: 50%;
-          overflow: hidden;
-          margin-left: -23px;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          -ms-border-radius: 50%;
-          border-radius: 50%; }
-          body .parcours-pro .timeline-container div:first-child .timeline-item div:first-child .fa {
-            position: relative;
-            top: 15px;
-            left: 15px;
-            font-size: 25px;
-            color: white; }
-        body .parcours-pro .timeline-container div:first-child .timeline-item div:last-child {
+          opacity: 0.4; }
+        body .parcours-pro .timeline-container .timeline-item div:last-child {
           width: 45%;
-          background: white;
-          /*
-                                  padding: 20px;
-          */
-          box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1); }
-          body .parcours-pro .timeline-container div:first-child .timeline-item div:last-child:before {
+          background: #111;
+          box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+          background-color: #111; }
+          body .parcours-pro .timeline-container .timeline-item div:last-child:before {
             content: '';
             position: absolute;
             left: 45%;
@@ -294,55 +191,47 @@ body {
             height: 0;
             border-top: 7px solid transparent;
             border-bottom: 7px solid transparent;
-            border-left: 7px solid #ef658a; }
-          body .parcours-pro .timeline-container div:first-child .timeline-item div:last-child h2 {
-            color: white;
-            background-color: #ef658a;
-            width: 100%;
-            padding: 20px;
-            margin-top: 0; }
-          body .parcours-pro .timeline-container div:first-child .timeline-item div:last-child p {
-            padding: 15px 20px;
-            margin: 0; }
-          body .parcours-pro .timeline-container div:first-child .timeline-item div:last-child span {
-            padding: 0 10px 0 0;
-            font-weight: 600; }
-        body .parcours-pro .timeline-container div:first-child .timeline-item .right {
+            border-left: 7px solid #111; }
+        body .parcours-pro .timeline-container .timeline-item .right {
           float: right; }
-    body .parcours-pro #timeline .timeline-item .timeline-content.right:before {
-      content: '';
-      right: 45%;
-      left: inherit;
-      border-left: 0;
-      border-right: 7px solid #ef658a; }
-  body .star-outside {
-    width: 2vw;
-    margin: 0vw 10vw; }
-
-/*
-@media(max-width: 768px) {
-    #timeline {
-        margin: 30px;
-        padding: 0px;
-        width: 90%;
-    }
-    #timeline:before {
-        left: 0;
-    }
-    #timeline .timeline-item .timeline-content {
-        width: 90%;
-        float: right;
-    }
-    #timeline .timeline-item .timeline-content:before,
-    #timeline .timeline-item .timeline-content.right:before {
-        left: 10%;
-        margin-left: -6px;
+      body .parcours-pro .timeline-container #timeline .timeline-item .timeline-content.right:before {
+        content: '';
+        right: 45%;
+        left: inherit;
         border-left: 0;
-        border-right: 7px solid crimson;
-    }
-    #timeline .timeline-item .timeline-icon {
-        left: 0;
-    }
-}*/
+        border-right: 7px solid #111; }
+  body .techno {
+    height: auto;
+    background-image: url(../assets/imgs/rainbow-circle2.svg);
+    font-weight: 300;
+    background-position: bottom; }
+    body .techno h2 {
+      font-weight: 600;
+      width: 20vw;
+      text-align: center;
+      margin: 1vh auto;
+      font-size: 1.5vw; }
+    body .techno p {
+      width: 45vw;
+      text-align: center;
+      margin: 0vh auto; }
+    body .techno article {
+      width: 80vw;
+      display: flex; }
+      body .techno article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 20vw; }
+        body .techno article div img {
+          width: 7vw;
+          margin: 1vw; }
+        body .techno article div p {
+          width: 80%;
+          padding: 2vh 0;
+          margin-bottom: 0;
+          color: whitesmoke; }
 
 /*# sourceMappingURL=style.css.map */
