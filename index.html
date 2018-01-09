@@ -14,6 +14,23 @@
 </head>
 
 <body id="wrap">
+   <!-- NAVBAR -->
+	<nav class="nav">
+		<input type="checkbox" id="navigation" class="nav-switch">
+		<label for="navigation" class="hamburger">
+			<span>menu</span>
+		</label>
+		<ul class="menu list-none">
+			<li><a href="#home" class="js-scrollTo">HOME</a></li>
+			<li><a href="#valeurs" class="js-scrollTo">VALEURS</a></li>
+			<li><a href="#competence" class="js-scrollTo">COMPÉTENCES</a></li>
+			<li><a href="#portfolio" class="js-scrollTo">PROJETS</a></li>
+			<li><a href="cv-dev.pdf" class="js-scrollTo" target="_blank">CV</a></li>
+			<li><a href="#contact" class="js-scrollTo">CONTACT</a></li>
+			<li><a href="#social" class="js-scrollTo">LIENS SOCIAUX</a></li>
+		</ul>
+	</nav>
+	<!-- END DIV CLASS NAV -->
     <header>
         <span><img src="assets/imgs/logo.svg" alt="">Unicorn</span>
         <h1>WELCOME</h1>
@@ -21,87 +38,48 @@
             < Lise Poirier - Développeur web et graphiste />
         </h2>
     </header>
-    <section class="present">
+    <section class="savoir-etre">
         <div class="separator"></div>
         <div class="title">
             <h2>LA TÊTE DANS LES ÉTOILES MAIS LES PIEDS SUR TERRE</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat id tempora voluptas quos aut vitae, laborum iste dicta commodi vel alias dolores.</p>
         </div>
         <article>
-            <div>
+            <div data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal repeat">
                 <img src="assets/imgs/icons/003-photo-camera.svg" alt="" class="center-block">
                 <p>Si une image vaut mille mots, autant bien choisir les mots quand on en a peu. Mon expertise est à votre écoute avant de trouver l’idée et la traduire, en quelques mots.</p>
             </div>
-            <div>
+            <div data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal repeat">
                 <img src="assets/imgs/icons/002-speech-bubble.svg" alt="" class="center-block">
                 <p>La forme passe par les formes. Diplômée en communication graphique et formée en Web-développement, j'ai aujourd'hui le sens de l'image et de l'air numérique.</p>
             </div>
-            <div>
+            <div data-anijs="if: scroll, on: window, do: fadeInDown animated, before: $scrollReveal repeat">
                 <img src="assets/imgs/icons/001-logo.svg" alt="" class="center-block">
                 <p>Un site web doit véhiculer vos valeurs et vos atouts. C’est pour cela qu’un soin particulier doit être donné au graphisme comme au contenu. Mon rôle est de répondre à ces attentes.</p>
             </div>
-            <div>
+            <div data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal repeat">
                 <img src="assets/imgs/icons/002-speech-bubble.svg" alt="" class="center-block">
                 <p>La forme passe par les formes. Diplômée en communication graphique et formée en Web-développement, j'ai aujourd'hui le sens de l'image et de l'air numérique.</p>
             </div>
-            <div>
+            <div data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal repeat">
                 <img src="assets/imgs/icons/001-logo.svg" alt="" class="center-block">
                 <p>Un site web doit véhiculer vos valeurs et vos atouts. C’est pour cela qu’un soin particulier doit être donné au graphisme comme au contenu. Mon rôle est de répondre à ces attentes.</p>
             </div>
         </article>
         <div class="separator"></div>
     </section>
-    <section class="parcours-pro">
+    <section class="cv">
         <div class="separator"></div>
+        <img src="assets/imgs/logo2.svg" alt="">
         <div class="title">
             <h2>MAIS TOUJOURS AVEC PLUS D'UN TOUR DANS SON SAC</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat id tempora voluptas quos aut vitae, laborum iste dicta commodi vel alias dolores.</p>
         </div>
-        <div class="timeline-container">
-            <div id="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon"></div>
-                    <div class="timeline-content" data-anijs="if: scroll, on: window, do: zoomInLeft animated, before: $scrollReveal">
-                        <h3>Co-formateur Junior &#x95; FACE RENNES &#x95; Rennes</h3>
-                        <p><span class="time-stamp">mai 2017 à janvier 2018 &#x95;</span>Dans le cadre du service civique, l'association Face Rennes m'a offert la possibilité de transmettre mes connaissances acquises à la promotion numéro 2 de la Code Académie. I IIci en soutien des formateurs expérimentés, je suis à la disposition des apprentis pour répondre à leurs questions et les aider à se développer dans le cadre des technologies informatiques, notamment HTML 5, CSS 3 et JAVASCRIPT, mes spécialités. </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-anijs="if: scroll, on: window, do: zoomInRight animated, before: $scrollReveal">
-                    <div class="timeline-icon"></div>
-                    <div class="timeline-content right">
-                        <h3>Graphiste &#x95; Point Cardinal &#x95; Rennes</h3>
-                        <p><span class="time-stamp">avril 2016 &#x95;</span>Dans le cadre du service civique, l'association Face Rennes m'a offert la possibilité de transmettre mes connaissances acquises à la promotion numéro 2 de la Code Académie. I IIci en soutien des formateurs expérimentés, je suis à la disposition des apprentis pour répondre à leurs questions et les aider à se développer dans le cadre des technologies informatiques, notamment HTML 5, CSS 3 et JAVASCRIPT, mes spécialités. </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-anijs="if: scroll, on: window, do: zoomInLeft animated, before: $scrollReveal">
-                    <div class="timeline-icon"></div>
-                    <div class="timeline-content">
-                        <h3>Graphiste &#x95; Hémisphère 4 &#x95; Rennes</h3>
-                        <p><span class="time-stamp">septembre 2015 décembre 2015 &#x95;</span>Dans le cadre du service civique, l'association Face Rennes m'a offert la possibilité de transmettre mes connaissances acquises à la promotion numéro 2 de la Code Académie. I IIci en soutien des formateurs expérimentés, je suis à la disposition des apprentis pour répondre à leurs questions et les aider à se développer dans le cadre des technologies informatiques, notamment HTML 5, CSS 3 et JAVASCRIPT, mes spécialités. </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-anijs="if: scroll, on: window, do: zoomInRight animated, before: $scrollReveal">
-                    <div class="timeline-icon"></div>
-                    <div class="timeline-content right">
-                        <h3>Graphiste &#x95; Point Cardinal &#x95; Rennes</h3>
-                        <p><span class="time-stamp">juillet 2015 aout 2015 &#x95;</span>Dans le cadre du service civique, l'association Face Rennes m'a offert la possibilité de transmettre mes connaissances acquises à la promotion numéro 2 de la Code Académie. I IIci en soutien des formateurs expérimentés, je suis à la disposition des apprentis pour répondre à leurs questions et les aider à se développer dans le cadre des technologies informatiques, notamment HTML 5, CSS 3 et JAVASCRIPT, mes spécialités. </p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-anijs="if: scroll, on: window, do: zoomInLeft animated, before: $scrollReveal">
-                    <div class="timeline-icon"></div>
-                    <div class="timeline-content">
-                        <h3>Graphiste &#x95; Imagic &#x95; Rennes</h3>
-                        <p><span class="time-stamp">février 2015 mars 2015 &#x95;</span>Dans le cadre du service civique, l'association Face Rennes m'a offert la possibilité de transmettre mes connaissances acquises à la promotion numéro 2 de la Code Académie. I IIci en soutien des formateurs expérimentés, je suis à la disposition des apprentis pour répondre à leurs questions et les aider à se développer dans le cadre des technologies informatiques, notamment HTML 5, CSS 3 et JAVASCRIPT, mes spécialités. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <a href=""><button>C.V</button></a>
+        <h4>TELECHARGEMENT C.V</h4>
         <div class="separator"></div>
     </section>
-    <section class="present techno">
+    <section class="savoir-etre techno">
         <div class="separator"></div>
         <div class="title">
             <h2>TECHNOS</h2>
@@ -109,82 +87,136 @@
         </div>
         <div class="separator"></div>
         <article>
-            <div>
+            <div data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal repeat">
                 <img src="assets/imgs/icons/005-html-5-logo.svg" alt="" class="center-block">
                 <p>LOREM</p>
             </div>
-            <div>
+            <div data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal repeat">
                 <img src="assets/imgs/icons/004-css-3.svg" alt="" class="center-block">
                 <p>LOREM</p>
             </div>
-            <div>
+            <div data-anijs="if: scroll, on: window, do: fadeInDown animated, before: $scrollReveal repeat">
                 <img src="assets/imgs/icons/003-js.svg" alt="" class="center-block">
                 <p>LOREM</p>
             </div>
-            <div>
+            <div data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal repeat">
                 <img src="assets/imgs/icons/002-wordpress-logo-of-a-letter-in-a-circle.svg" alt="" class="center-block">
                 <p>LOREM</p>
             </div>
-            <div>
+            <div data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal repeat">
                 <img src="assets/imgs/icons/001-framework.svg" alt="" class="center-block">
                 <p>LOREM</p>
             </div>
         </article>
         <div class="separator"></div>
     </section>
-    <section class="present projects">
-        <div class="separator"></div>
+    <section class="savoir-etre projects">
+        <div class="separator separator-black"></div>
         <div class="title">
             <h2>PROJECTS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat id tempora voluptas quos aut vitae, laborum iste dicta commodi vel alias dolores.</p>
         </div>
         <article>
-            <div>
+            <div id="bowling" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal">
                 <div>
                     <h4><a href="">LOREM</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquid perferendis libero mollitia, culpa saepe obcaecati deleniti impedit ipsa, provident, soluta sed hic quaerat dolorem architecto? Distinctio voluptatem, quo esse!</p>
                 </div>
             </div>
-            <div>
+            <div id="giant" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal">
                 <div>
                     <h4><a href="">LOREM</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquid perferendis libero mollitia, culpa saepe obcaecati deleniti impedit ipsa, provident, soluta sed hic quaerat dolorem architecto? Distinctio voluptatem, quo esse!</p>
                 </div>
             </div>
-            <div>
+            <div id="bose" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal">
                 <div>
                     <h4><a href="">LOREM</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquid perferendis libero mollitia, culpa saepe obcaecati deleniti impedit ipsa, provident, soluta sed hic quaerat dolorem architecto? Distinctio voluptatem, quo esse!</p>
                 </div>
             </div>
-            <div>
+            <div id="branded" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal">
                 <div>
                     <h4><a href="">LOREM</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquid perferendis libero mollitia, culpa saepe obcaecati deleniti impedit ipsa, provident, soluta sed hic quaerat dolorem architecto? Distinctio voluptatem, quo esse!</p>
                 </div>
             </div>
-            <div>
+            <div id="dots" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal">
                 <div>
                     <h4><a href="">LOREM</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquid perferendis libero mollitia, culpa saepe obcaecati deleniti impedit ipsa, provident, soluta sed hic quaerat dolorem architecto? Distinctio voluptatem, quo esse!</p>
                 </div>
             </div>
-            <div>
+            <div id="veto" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal">
                 <div>
                     <h4><a href="">LOREM</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquid perferendis libero mollitia, culpa saepe obcaecati deleniti impedit ipsa, provident, soluta sed hic quaerat dolorem architecto? Distinctio voluptatem, quo esse!</p>
                 </div>
             </div>
-            <div>
+            <div id="audio" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal">
                 <div>
                     <h4><a href="">LOREM</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquid perferendis libero mollitia, culpa saepe obcaecati deleniti impedit ipsa, provident, soluta sed hic quaerat dolorem architecto? Distinctio voluptatem, quo esse!</p>
                 </div>
             </div>
-            
+            <div id="bootstrap" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal">
+                <div>
+                    <h4><a href="">LOREM</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquid perferendis libero mollitia, culpa saepe obcaecati deleniti impedit ipsa, provident, soluta sed hic quaerat dolorem architecto? Distinctio voluptatem, quo esse!</p>
+                </div>
+            </div>
+            <div id="pomodoro" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal">
+                <div>
+                    <h4><a href="">LOREM</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquid perferendis libero mollitia, culpa saepe obcaecati deleniti impedit ipsa, provident, soluta sed hic quaerat dolorem architecto? Distinctio voluptatem, quo esse!</p>
+                </div>
+            </div>
+            <div id="poney" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal">
+                <div>
+                    <h4><a href="">LOREM</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquid perferendis libero mollitia, culpa saepe obcaecati deleniti impedit ipsa, provident, soluta sed hic quaerat dolorem architecto? Distinctio voluptatem, quo esse!</p>
+                </div>
+            </div>
+            <div id="quizz" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal">
+                <div>
+                    <h4><a href="">LOREM</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquid perferendis libero mollitia, culpa saepe obcaecati deleniti impedit ipsa, provident, soluta sed hic quaerat dolorem architecto? Distinctio voluptatem, quo esse!</p>
+                </div>
+            </div>
+            <div id="pastime" data-anijs="if: scroll, on: window, do: fadeInRight animated, before: $scrollReveal">
+                <div>
+                    <h4><a href="">LOREM</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquid perferendis libero mollitia, culpa saepe obcaecati deleniti impedit ipsa, provident, soluta sed hic quaerat dolorem architecto? Distinctio voluptatem, quo esse!</p>
+                </div>
+            </div>
+            <div id="create" data-anijs="if: scroll, on: window, do: fadeInLeft animated, before: $scrollReveal">
+                <div>
+                    <h4><a href="">LOREM</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aliquid perferendis libero mollitia, culpa saepe obcaecati deleniti impedit ipsa, provident, soluta sed hic quaerat dolorem architecto? Distinctio voluptatem, quo esse!</p>
+                </div>
+            </div>
         </article>
+        <div class="separator separator-black"></div>
+    </section>
+      <section class="cv contact">
+        <div class="separator"></div>
+        <img src="assets/imgs/icons/paper.svg" alt="">
+        <div class="title">
+            <h2>MAIS TOUJOURS AVEC PLUS D'UN TOUR DANS SON SAC</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat id tempora voluptas quos aut vitae, laborum iste dicta commodi vel alias dolores.</p>
+        </div>
+        <p>Le formulaire est en cours de construction, vous pouvez me contacter sur cette adresse mail : <a href="">lise.p.poirier@gmail.com</a></p>
         <div class="separator"></div>
     </section>
+    <footer>
+           <div class="separator separator-black"></div>
+           <div>
+           <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+           <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+           </div>
+           <p>Créatives commons : attribution • Créateurs des icônes : Pixel Buddha, Freepik & Madebyoliver</p>
+        <div class="separator separator-black"></div>
+    </footer>
 
 
 

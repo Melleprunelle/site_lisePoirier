@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -42,27 +42,15 @@
      id="namedview4802"
      showgrid="false"
      showguides="false"
-     inkscape:zoom="0.64983113"
-     inkscape:cx="280.64821"
-     inkscape:cy="175.30094"
+     inkscape:zoom="1.1917801"
+     inkscape:cx="678.16662"
+     inkscape:cy="246.91291"
      inkscape:window-x="57"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4490" />
   <defs
      id="defs4492">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient18827">
-      <stop
-         style="stop-color:#111111;stop-opacity:1;"
-         offset="0"
-         id="stop18829" />
-      <stop
-         style="stop-color:#111111;stop-opacity:0;"
-         offset="1"
-         id="stop18831" />
-    </linearGradient>
     <linearGradient
        id="i"
        x1="154.97"
@@ -718,16 +706,6 @@
        x2="700.28271"
        y2="399.99338"
        gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient18827"
-       id="linearGradient18833"
-       x1="238.25252"
-       y1="776.15662"
-       x2="556.08917"
-       y2="784.04559"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.99996862,0,0,1.3142028,-997.02131,-325.49967)" />
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath18974">
@@ -783,13 +761,4 @@
        style="opacity:1;fill:url(#linearGradient15170);fill-opacity:1;fill-rule:nonzero;stroke:none"
        inkscape:connector-curvature="0" />
   </g>
-  <rect
-     style="opacity:1;fill:url(#linearGradient18833);fill-opacity:1;fill-rule:evenodd;stroke:#2a898f;stroke-width:0.0893402;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="rect18825"
-     width="363.44919"
-     height="360.39798"
-     x="-803.34961"
-     y="516.83105"
-     transform="matrix(0,-1,1,0,0,0)"
-     clip-path="url(#clipPath18974)" />
 </svg>

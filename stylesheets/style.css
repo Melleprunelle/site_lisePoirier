@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Lovelo';
   src: url("../assets/font/Lovelo Line Light.otf"); }
@@ -16,11 +17,136 @@ body {
   padding: 0;
   background-color: #111;
   background: linear-gradient(135deg, black 0%, #333333 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  /* HEDEAR ET SECTION BASIQUE */
+  /* SAVOIR ÊTRE */
+  /* TELECHARGER CV */
+  /* TECHNO */
+  /* LES PROJETS */
+  /* CONTACT */
+  /* FOOTER */ }
+  body .nav [type=checkbox] {
+    display: none; }
+  body .list-none {
+    list-style: none; }
+  body .floating-li > li {
+    display: inline-block; }
+  body .hamburger {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+    padding: 0;
+    width: 96px;
+    height: 96px;
+    font-size: 0;
+    text-indent: -9999px;
+    cursor: pointer;
+    background-color: transparent; }
+  body .hamburger span {
+    display: block;
+    position: absolute;
+    background: #111;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-timing-function: easen-in-out;
+    transition-duration: 0.4s;
+    transition-delay: 1200ms;
+    transition-property: width height transform; }
+  body .hamburger span::before,
+  body .hamburger span::after {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    width: 48px;
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    content: "";
+    opacity: 0;
+    transform: translate(-50%, -50%) scaleX(0.1);
+    transition-property: opacity transform;
+    transition-duration: 0.4s, 0.4s;
+    transition-delay: 300ms; }
+  body [type=checkbox]:checked ~ label span {
+    width: 96px;
+    height: 96px;
+    transition-delay: 0ms; }
+  body [type=checkbox]:checked ~ label span::before {
+    transform: translate(-50%, -50%) rotate(45deg) scaleX(1); }
+  body [type=checkbox]:checked ~ label span::after {
+    transform: translate(-50%, -50%) rotate(-45deg) scaleX(1); }
+  body [type=checkbox]:checked ~ label span::before,
+  body [type=checkbox]:checked ~ label span::after {
+    opacity: 1;
+    transition-delay: 1500ms; }
+  body .menu {
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.8);
+    background-image: url(../assets/imgs/rainbow-circle3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0;
+    padding: 0 96px;
+    border-radius: 48px;
+    transform-origin: calc(100vw - 48px) 48px;
+    transform: scale(0);
+    transition-property: height transform border-radius;
+    transition-delay: 980ms;
+    transition-duration: 0.34s;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    font-size: 1.75rem;
+    font-weight: 100; }
+  body .menu li {
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0;
+    transition: opacity 0.8s 500ms; }
+  body .menu li a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1em; }
+  @media screen and (min-height: 26rem) {
+    body .menu li:first-child {
+      margin-top: 200px; } }
+  @media screen and (min-height: 26rem) {
+    body .menu li:last-child {
+      margin-bottom: 200px; } }
+  body [type=checkbox]:checked ~ label ~ .menu {
+    height: 100vh;
+    border-radius: 0;
+    transform: scale(1);
+    transition-property: height transform border-radius;
+    transition-delay: 50ms;
+    transition-duration: 0.4s; }
+  body [type=checkbox]:checked ~ label ~ .menu li {
+    opacity: 1;
+    transition-delay: 600ms; }
   body header {
     background-color: #a90329; }
   body header,
-  body section {
+  body section,
+  body footer {
     height: 75vh;
     background-image: url(../assets/imgs/rainbow-circle.svg);
     background-repeat: no-repeat;
@@ -31,16 +157,26 @@ body {
     align-items: center;
     flex-direction: column;
     color: white;
-    font-family: "Roboto"; }
+    font-family: "Roboto";
+    /* separator section */
+    /* fin separator section */
+    /* titre section */
+    /* fin titre section */ }
     body header .separator,
-    body section .separator {
+    body section .separator,
+    body footer .separator {
       opacity: 0.4;
       width: 3px;
       height: 25vh;
       background-color: #a90329;
       margin: 0vh auto 0vh auto; }
+    body header .separator-black,
+    body section .separator-black,
+    body footer .separator-black {
+      background-color: #111; }
     body header span,
-    body section span {
+    body section span,
+    body footer span {
       padding: 3vh;
       width: 50vw;
       font-size: 1.5vw;
@@ -48,28 +184,33 @@ body {
       text-align: right;
       text-transform: uppercase; }
       body header span img,
-      body section span img {
+      body section span img,
+      body footer span img {
         width: 5vw;
         vertical-align: bottom;
         margin: 0 1vw; }
     body header h1,
-    body section h1 {
+    body section h1,
+    body footer h1 {
       font-family: "Lovelo-Black";
       font-size: 7vw;
       letter-spacing: 1vw;
       margin: 1vh; }
     body header h2,
-    body section h2 {
+    body section h2,
+    body footer h2 {
       margin: 0;
       width: 30vw;
       text-align: right;
       font-weight: 300;
       font-size: 1.2vw; }
     body header .title,
-    body section .title {
+    body section .title,
+    body footer .title {
       margin: 5vh 0 5vh 0; }
       body header .title h2,
-      body section .title h2 {
+      body section .title h2,
+      body footer .title h2 {
         font-weight: 600;
         width: 20vw;
         text-align: center;
@@ -77,118 +218,74 @@ body {
         margin-bottom: 1.5vh;
         font-size: 1.5vw; }
       body header .title p,
-      body section .title p {
+      body section .title p,
+      body footer .title p {
         width: 30vw;
         text-align: center;
         margin: 0vh auto;
-        line-height: 3vh; }
-  body .present {
+        line-height: 3vh;
+        font-weight: 300; }
+    body header article,
+    body section article,
+    body footer article {
+      width: 55vw;
+      display: flex; }
+      body header article div,
+      body section article div,
+      body footer article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 20vw; }
+  body .savoir-etre {
     height: auto;
     background-image: url(../assets/imgs/rainbow-circle2.svg);
     font-weight: 300;
     background-position: top center;
     background-size: 100%; }
-    body .present .separator {
-      opacity: 0.4;
-      width: 3px;
-      height: 25vh;
-      background-color: #a90329;
-      margin: 0vh auto 0vh auto; }
-    body .present article {
+    body .savoir-etre article {
       width: 50vw;
       display: flex;
       margin: 5vh; }
-      body .present article div {
+      body .savoir-etre article div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
         width: 33.33vw; }
-        body .present article div img {
+        body .savoir-etre article div img {
           width: 5vw;
           margin: 1vw; }
-        body .present article div p {
+        body .savoir-etre article div p {
           width: 90%;
           padding: 2vh 0;
           line-height: inherit; }
-  body .parcours-pro {
+  body .cv {
     height: auto;
-    background-image: none;
-    background-size: 100%;
-    background-position: center top;
-    background-color: ghostwhite; }
-    body .parcours-pro h2 {
-      font-weight: 600;
-      width: 20vw;
-      text-align: center;
-      margin: 0vh auto 1vh auto;
+    background-image: url(../assets/imgs/rainbow-circle3.svg);
+    background-size: cover;
+    background-position: 50% 38%;
+    background-color: slategrey; }
+    body .cv img {
+      width: 13vw; }
+    body .cv a button {
+      color: white;
+      text-decoration: none;
       font-size: 1.5vw;
-      color: #111; }
-    body .parcours-pro h3 {
-      margin-top: 0;
-      padding: 20px;
-      color: ghostwhite;
-      background-color: #a90329; }
-    body .parcours-pro p {
-      margin: 0;
-      padding: 0;
-      font-weight: 300;
-      color: #111; }
-    body .parcours-pro span {
-      padding: 0 10px 0 0;
-      font-size: 1.3vw;
-      font-weight: 300;
-      letter-spacing: inherit; }
-    body .parcours-pro .timeline-container {
-      max-width: 65vw;
-      margin: 0 auto; }
-      body .parcours-pro .timeline-container p {
-        margin: 0;
-        padding: 15px 20px;
-        font-weight: 300;
-        color: whitesmoke; }
-      body .parcours-pro .timeline-container .timeline-item {
-        position: relative; }
-        body .parcours-pro .timeline-container .timeline-item:before {
-          content: '';
-          display: block;
-          clear: both; }
-        body .parcours-pro .timeline-container .timeline-item:after {
-          content: '';
-          display: block;
-          clear: both; }
-        body .parcours-pro .timeline-container .timeline-item div:first-child {
-          background: #a90329;
-          width: 3px;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 49.9%;
-          opacity: 0.4; }
-        body .parcours-pro .timeline-container .timeline-item div:last-child {
-          width: 45%;
-          background: #111;
-          box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
-          background-color: #111; }
-          body .parcours-pro .timeline-container .timeline-item div:last-child:before {
-            content: '';
-            position: absolute;
-            left: 45%;
-            top: 20px;
-            width: 0;
-            height: 0;
-            border-top: 7px solid transparent;
-            border-bottom: 7px solid transparent;
-            border-left: 7px solid #111; }
-        body .parcours-pro .timeline-container .timeline-item .right {
-          float: right; }
-      body .parcours-pro .timeline-container #timeline .timeline-item .timeline-content.right:before {
-        content: '';
-        right: 45%;
-        left: inherit;
-        border-left: 0;
-        border-right: 7px solid #111; }
+      height: 100px;
+      width: 100px;
+      margin: 3vh 0 1vh 0;
+      border-radius: 100%;
+      border: 0;
+      background-color: #a90329;
+      cursor: pointer; }
+      body .cv a button:hover {
+        background-color: #111; }
+    body .cv h4 {
+      margin: 1vh 0 5vh 0; }
   body .techno {
     height: auto;
     background-image: url(../assets/imgs/rainbow-circle2.svg);
@@ -212,45 +309,133 @@ body {
     background-position: top;
     background-size: cover; }
     body .projects article {
-      display: block;
-      min-width: 65vw;
-      max-width: 80vw; }
+      display: block; }
+      body .projects article #bowling {
+        background-image: url(../assets/imgs/projets/bowling.png); }
+      body .projects article #giant {
+        background-image: url(../assets/imgs/projets/tinygiant.png); }
+      body .projects article #bose {
+        background-image: url(../assets/imgs/projets/bose.png); }
+      body .projects article #branded {
+        background-image: url(../assets/imgs/projets/branded.png); }
+      body .projects article #dots {
+        background-image: url(../assets/imgs/projets/dots.png); }
+      body .projects article #veto {
+        background-image: url(../assets/imgs/projets/123veto.png); }
+      body .projects article #audio {
+        background-image: url(../assets/imgs/projets/audio.png); }
+      body .projects article #bootstrap {
+        background-image: url(../assets/imgs/projets/boostrap.png); }
+      body .projects article #pomodoro {
+        background-image: url(../assets/imgs/projets/pomodoro.png); }
+      body .projects article #poney {
+        background-image: url(../assets/imgs/projets/poney.png); }
+      body .projects article #quizz {
+        background-image: url(../assets/imgs/projets/quizz.png); }
+      body .projects article #pastime {
+        background-image: url(../assets/imgs/projets/pastime.png); }
+      body .projects article #create {
+        background-image: url(../assets/imgs/projets/create.png); }
       body .projects article div {
-        width: 49%;
-        height: 250px;
-        margin: 0.2vh auto;
+        width: 47%;
+        height: 400px;
+        margin: 1vh 0.5vw;
         display: inline-block;
         vertical-align: top;
         position: relative;
-        background-color: white; }
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: saturate(0%); }
+        body .projects article div:before {
+          content: "";
+          display: block;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          position: absolute;
+          pointer-events: none;
+          mix-blend-mode: multiply;
+          opacity: 0.5;
+          background: lightslategray; }
         body .projects article div div {
           width: 100%;
           height: 100%;
-          background-color: #222;
-          opacity: 0; }
+          background-color: rgba(18, 18, 18, 0.8);
+          opacity: 0;
+          margin: 0; }
           body .projects article div div h4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: absolute;
             top: 0;
             margin: 0;
-            padding: 5vh 0;
-            width: 20%;
+            padding: 0 0;
+            height: 50%;
+            width: 50%;
             text-align: center;
             background-color: #111;
-            border-right: 3px solid white; }
+            border-bottom: 2px solid white;
+            font-size: 3vw; }
             body .projects article div div h4 a {
               text-decoration: none;
               color: white; }
           body .projects article div div p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: absolute;
             bottom: 0;
             right: 0;
             margin: 0;
-            padding: 5vh 2vw;
-            width: 80.5%;
+            padding: 0vh 2vw;
+            width: 70%;
+            height: 50%;
             text-align: center;
-            background-color: #111;
-            border-left: 3px solid white; }
+            background-color: #111; }
           body .projects article div div:hover {
             opacity: 1; }
+  body .contact {
+    background-image: url(../assets/imgs/rainbow-circle.svg);
+    background-size: cover;
+    background-position: 50% 38%;
+    background-color: #111; }
+    body .contact img {
+      width: 10vw; }
+    body .contact .title {
+      margin-bottom: 2vh; }
+    body .contact p {
+      font-weight: 300;
+      margin-bottom: 5vh; }
+      body .contact p a {
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+        color: #a90329;
+        background-color: white;
+        padding: 0.5vw; }
+        body .contact p a:hover {
+          background-color: #111;
+          color: white; }
+    body .contact h4 {
+      margin: 1vh 0 5vh 0; }
+  body footer {
+    height: auto;
+    background-image: none;
+    background-size: cover;
+    background-position: 50% 38%;
+    background-color: lightslategrey;
+    display: flex; }
+    body footer div {
+      margin: 5vh 0 1vh 0; }
+      body footer div i {
+        padding: 1vw 1vw 2vh 1vw; }
+    body footer p {
+      margin: 0 0 5vh 0;
+      font-weight: 300; }
+    body footer .separator {
+      height: 8vh; }
 
 /*# sourceMappingURL=style.css.map */
