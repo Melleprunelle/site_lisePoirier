@@ -1,0 +1,57 @@
+@media (max-width: 900px) {
+  body .hamburger span {
+    width: 10vw; }
+  body .menu {
+    width: 100vw; }
+  body .menu li a {
+    font-size: 4em; }
+  body header,
+  body section,
+  body footer {
+    height: 100vh; }
+    body header .separator,
+    body section .separator,
+    body footer .separator {
+      width: 5px; }
+    body header span,
+    body section span,
+    body footer span {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      color: transparent;
+      padding: 0;
+      margin: 0;
+      font-size: 0.5em; }
+      body header span img,
+      body section span img,
+      body footer span img {
+        width: 35vw;
+        margin: 0 auto; }
+    body header h1,
+    body section h1,
+    body footer h1 {
+      margin: 1vh auto;
+      font-size: 4em; }
+    body header h2,
+    body section h2,
+    body footer h2 {
+      font-size: 1.5em;
+      width: 80vw;
+      text-align: center; }
+    body header .title h2,
+    body section .title h2,
+    body footer .title h2 {
+      width: 80vw;
+      font-size: 1em; }
+    body header .title p,
+    body section .title p,
+    body footer .title p {
+      width: 80vw;
+      font-size: 0.9em; }
+    body header article,
+    body section article,
+    body footer article {
+      display: block !important; } }
+
+/*# sourceMappingURL=responsive.css.map */
