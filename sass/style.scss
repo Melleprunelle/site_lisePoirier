@@ -54,7 +54,9 @@
      .floating-li>li {
          display: inline-block;
      }
+
      .hamburger {
+              z-index: 999;
          display: block;
          position: absolute;
          right: 0;
@@ -86,7 +88,7 @@
          background-image: url(../assets/imgs/icons/shapes.svg);
          background-size: 50%;
      }
-     .menu {
+     .menu {   
          @include displayFlex;
          @include background;
          height: 100vh;
@@ -102,7 +104,7 @@
          transition-delay: 980ms;
          transition-duration: 0.34s;
          color: $white-color;
-         font-size: 1.75vw;
+         font-size: 1.5em;
          font-weight: 100;
      }
      .menu li {
@@ -122,21 +124,9 @@
              transition: 0.5s;
          }
      }
-     @media screen and (min-height: 26rem) {
-         .menu li:first-child {
-             margin-top: 200px;
-         }
-     }
-     @media screen and (min-height: 26rem) {
-         .menu li:last-child {
-             margin-bottom: 200px;
-         }
-     }
      [type=checkbox]:checked~label~.menu {
          height: 100vh;
-         border-radius: 0;
          transform: scale(1);
-         transition-property: height transform border-radius;
          transition-delay: 50ms;
          transition-duration: 0.4s;
      }
@@ -231,7 +221,6 @@
          background-attachment: fixed;
          font-weight: 300;
          article {
-             display: flex;
              width: 50vw;
              margin: 5vh;
              div {
@@ -265,7 +254,7 @@
                  width: 100px;
                  background-color: $black-color;
                  margin: 3vh 0 1vh 0;
-                 font-size: 1.5vw;
+                 font-size: 1.8em;
                  text-decoration: none;
                  color: $white-color;
                  border: 0;
@@ -351,7 +340,7 @@
                  display: inline-block;
                  vertical-align: top;
                  position: relative;
-                 height: 400px;
+                 height: 50vh;
                  width: 47%;
                  margin: 1vh 0.5vw;
                  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
@@ -369,7 +358,7 @@
                          width: 100%;
                          bottom: 0;
                          border-top: 3px solid $primary-color;
-                         font-size: 2vw;
+                         font-size: 2.5em;
                          text-decoration: none;
                          font-weight: 600;
                          color: $white-color;
@@ -387,17 +376,19 @@
                          margin: 0;
                          padding: 0 0;
                          top: 0;
-                         font-size: 3vw;
+                         font-size: 2.5em;
                          text-align: center;
                          border-bottom: 10px solid $primary-color;
                          a {
                              bottom: inherit;
                              border-top: 0;
-                             color: $black-color;
+                             font-size: inherit;
+                             color: $secondary-color;
                          }
                      }
                      p {
                          @include displayFlex;
+                         font-size: 1.2em;
                          position: absolute;
                          background-color: $secondary-color;
                          height: 50%;

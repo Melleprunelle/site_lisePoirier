@@ -1,5 +1,9 @@
-@media (max-width: 900px) {
+    @media (max-width: 900px) {
     body {
+        .hamburger {
+         width: 50px;
+         height: 50px;
+     }
         .hamburger span {
             width: 10vw;
         }
@@ -7,12 +11,13 @@
             width: 100vw;
         }
         .menu li a {
-            font-size: 4em;
+            font-size: 1em;
         }
         header,
         section,
         footer {
             height: 100vh;
+            text-align: center;
             .separator {
                 width: 5px;
             }
@@ -45,12 +50,56 @@
                 }
                 p {
                     width: 80vw;
-                    font-size: 0.9em;
+                    font-size: 1em;
                 }
             }
             article {
                 display: block !important;
             }
         }
-    }
-}
+        .savoir-etre {
+            article {
+                width: 70vw;
+                font-size: 0.9em;
+                div {
+                    width: 100%;
+                    img {
+                        width: 25vw;
+                        opacity: 0.9;
+                    }
+                    p {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        .cv {
+            img {
+                width: 40vw;
+            }
+            a {
+                button {
+                    font-size: 2.5em;
+                }
+            }
+        }
+        .projects {
+            article {
+                div {
+                    height: 50vh;
+                    div {
+                        a {
+                            font-size: 2.5em;
+                        }
+                        h4 {
+                                font-size: 2.3em;
+                           
+                        }
+                        p {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+        }}

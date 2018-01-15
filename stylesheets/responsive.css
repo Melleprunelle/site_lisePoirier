@@ -1,14 +1,18 @@
 @media (max-width: 900px) {
+  body .hamburger {
+    width: 50px;
+    height: 50px; }
   body .hamburger span {
     width: 10vw; }
   body .menu {
     width: 100vw; }
   body .menu li a {
-    font-size: 4em; }
+    font-size: 1em; }
   body header,
   body section,
   body footer {
-    height: 100vh; }
+    height: 100vh;
+    text-align: center; }
     body header .separator,
     body section .separator,
     body footer .separator {
@@ -48,10 +52,32 @@
     body section .title p,
     body footer .title p {
       width: 80vw;
-      font-size: 0.9em; }
+      font-size: 1em; }
     body header article,
     body section article,
     body footer article {
-      display: block !important; } }
+      display: block !important; }
+  body .savoir-etre article {
+    width: 70vw;
+    font-size: 0.9em; }
+    body .savoir-etre article div {
+      width: 100%; }
+      body .savoir-etre article div img {
+        width: 25vw;
+        opacity: 0.9; }
+      body .savoir-etre article div p {
+        margin-top: 0; }
+  body .cv img {
+    width: 40vw; }
+  body .cv a button {
+    font-size: 2.5em; }
+  body .projects article div {
+    height: 50vh; }
+    body .projects article div div a {
+      font-size: 2.5em; }
+    body .projects article div div h4 {
+      font-size: 2.3em; }
+    body .projects article div div p {
+      font-size: 1.2em; } }
 
 /*# sourceMappingURL=responsive.css.map */
