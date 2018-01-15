@@ -34,7 +34,8 @@ body {
   body .floating-li > li {
     display: inline-block; }
   body .hamburger {
-    z-index: 999;
+    /*z-index: 999;
+    */
     display: block;
     position: absolute;
     right: 0;
@@ -395,20 +396,41 @@ body {
       width: 9vw; }
     body .contact .title {
       margin-bottom: 2vh; }
-    body .contact p {
-      margin-bottom: 5vh;
-      font-weight: 300; }
-      body .contact p a {
-        background-color: whitesmoke;
-        padding: 0.5vw;
+    body .contact form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 20vw; }
+      body .contact form label,
+      body .contact form input,
+      body .contact form textarea,
+      body .contact form button {
+        width: 100%; }
+      body .contact form label {
+        margin: 1vh 0; }
+      body .contact form input,
+      body .contact form button {
+        margin-bottom: 1vh;
+        height: 5vh;
+        padding: 10px;
+        color: #111; }
+      body .contact form textarea {
+        max-width: 100%;
+        margin-bottom: 2vh;
+        padding: 10px;
+        color: #111; }
+      body .contact form button {
+        background-color: #009EAD;
+        border: none;
+        color: whitesmoke;
         text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 600;
-        color: #009EAD; }
-        body .contact p a:hover {
-          color: #FA6900; }
-    body .contact h4 {
-      margin: 1vh 0 5vh 0; }
+        font-size: 1.2em;
+        margin-bottom: 0;
+        cursor: pointer; }
+        body .contact form button:hover {
+          background-color: #FA6900; }
   body footer {
     display: flex;
     flex-direction: column;

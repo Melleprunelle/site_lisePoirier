@@ -213,20 +213,17 @@
             <h2>Contacter la licorne</h2>
             <p>Le formulaire de contact est en cours de construction. Vous pouvez pour le moment me contacter à cet e-mail. Je vous répondrais avec plaisir dans les plus brefs délais.</p>
         </div>
-        <p>
-            <script type="text/javascript">
-                var khnqvuo = ['"', ' ', '@', '=', 'r', 'g', '"', ':', '=', 'e', 'm', 'l', 'o', 's', ' ', 'a', 'l', 'o', 'm', '"', 'a', '>', '.', 'o', 'l', 'o', 'a', 'i', 'm', 'i', 'i', 'l', 'i', '.', 'p', '.', 'p', 'c', 't', '.', 'i', 'm', 'i', 'l', '/', 'm', 'o', 's', 'p', 'l', 'i', 'a', 'i', 'i', 'e', 'c', 'e', 's', 'r', 'e', 'r', 'e', 's', '@', 'a', '"', 'r', '<', 'g', 'l', 'p', 'c', 'r', 'i', 'm', 'e', 'h', 'a', '<', 'f', 'a', '.', '.', '>'];
-                var qgtukdw = [40, 41, 70, 47, 69, 71, 48, 15, 7, 19, 39, 43, 38, 45, 2, 51, 12, 64, 50, 54, 33, 55, 60, 78, 56, 14, 1, 57, 72, 52, 74, 35, 17, 36, 63, 76, 21, 37, 13, 22, 25, 9, 11, 53, 81, 79, 24, 18, 23, 16, 34, 10, 65, 27, 28, 42, 5, 58, 29, 49, 4, 68, 46, 30, 82, 8, 66, 0, 31, 75, 61, 77, 26, 67, 32, 59, 3, 44, 80, 6, 73, 62, 20, 83];
-                var rhnvzec = new Array();
-                for (var i = 0; i < qgtukdw.length; i++) {
-                    rhnvzec[qgtukdw[i]] = khnqvuo[i];
-                }
-                for (var i = 0; i < rhnvzec.length; i++) {
-                    document.write(rhnvzec[i]);
-                }
-            </script>
-            <noscript>Please enable Javascript to see the email address</noscript>
-        </p>
+        <form name="inscription" method="POST" action="validation.php">
+            <label for="name">Nom</label>
+            <input type="text" name="name" value="" required>
+            <label for="firstname">Prénom</label>
+            <input type="text" name="firstname" value="" required>
+            <label for="Mail">Email</label>
+            <input type="email" name="mail" value="" required/>
+            <label for="Commentaire">Message</label>
+            <textarea type="text" name="sujet" value="" cols="40" rows="10" maxlength="200" required></textarea>
+            <button type="submit" name="envoyer" value="Envoyer">Envoyer</button>
+        </form>
         <div class="separator"></div>
     </section>
     <footer id="sociales">

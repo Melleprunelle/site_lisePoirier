@@ -1,105 +1,117 @@
     @media (max-width: 900px) {
-    body {
-        .hamburger {
-         width: 50px;
-         height: 50px;
-     }
-        .hamburger span {
-            width: 10vw;
-        }
-        .menu {
-            width: 100vw;
-        }
-        .menu li a {
-            font-size: 1em;
-        }
-        header,
-        section,
-        footer {
-            height: 100vh;
-            text-align: center;
-            .separator {
-                width: 5px;
+        body {
+            .hamburger {
+                width: 50px;
+                height: 50px;
             }
-            span {
-                display: flex;
-                flex-direction: column;
-                width: auto;
-                color: transparent;
-                padding: 0;
-                margin: 0;
-                font-size: 0.5em;
-                img {
-                    width: 35vw;
-                    margin: 0 auto;
-                }
+            .hamburger span {
+                width: 10vw;
             }
-            h1 {
-                margin: 1vh auto;
-                font-size: 4em;
+            .menu {
+                width: 100vw;
             }
-            h2 {
-                font-size: 1.5em;
-                width: 80vw;
+            .menu li a {
+                font-size: 1em;
+            }
+            header,
+            section,
+            footer {
+                height: 100vh;
                 text-align: center;
-            }
-            .title {
-                h2 {
-                    width: 80vw;
-                    font-size: 1em;
+                .separator {
+                    width: 5px;
                 }
-                p {
-                    width: 80vw;
-                    font-size: 1em;
-                }
-            }
-            article {
-                display: block !important;
-            }
-        }
-        .savoir-etre {
-            article {
-                width: 70vw;
-                font-size: 0.9em;
-                div {
-                    width: 100%;
+                span {
+                    display: flex;
+                    flex-direction: column;
+                    width: auto;
+                    color: transparent;
+                    padding: 0;
+                    margin: 0;
+                    font-size: 0.5em;
                     img {
-                        width: 25vw;
-                        opacity: 0.9;
+                        width: 35vw;
+                        margin: 0 auto;
+                    }
+                }
+                h1 {
+                    margin: 1vh auto;
+                    font-size: 4em;
+                }
+                h2 {
+                    font-size: 1.5em;
+                    width: 80vw;
+                    text-align: center;
+                }
+                .title {
+                    h2 {
+                        width: 80vw;
+                        font-size: 1em;
                     }
                     p {
-                        margin-top: 0;
+                        width: 80vw;
+                        font-size: 1em;
                     }
                 }
-            }
-        }
-        .cv {
-            img {
-                width: 40vw;
-            }
-            a {
-                button {
-                    font-size: 2.5em;
+                article {
+                    display: block !important;
                 }
             }
-        }
-        .projects {
-            article {
-                div {
-                    height: 50vh;
+            .savoir-etre {
+                article {
+                    width: 70vw;
+                    font-size: 0.9em;
                     div {
-                        a {
-                            font-size: 2.5em;
-                        }
-                        h4 {
-                                font-size: 2.3em;
-                           
+                        width: 100%;
+                        img {
+                            width: 25vw;
+                            opacity: 0.9;
                         }
                         p {
-                            font-size: 1.2em;
+                            margin-top: 0;
                         }
                     }
                 }
             }
+            .cv {
+                img {
+                    width: 40vw;
+                }
+                a {
+                    button {
+                        font-size: 2.5em;
+                    }
+                }
+            }
+            .contact {
+                form {
+                    width: 80vw;
+                    button {
+                        height: 10vh;
+                        padding: 0;
+                    }
+                }
+            }
+            .projects {
+                article {
+                    div {
+                        height: 50vh;
+                        div {
+                            a {
+                                font-size: 2.5em;
+                            }
+                            h4 {
+                                font-size: 2.3em;
+                            }
+                            p {
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                }
+            }
+            footer {
+                height: auto;
+            }
         }
-        }}
+    }

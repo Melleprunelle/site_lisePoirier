@@ -54,9 +54,9 @@
      .floating-li>li {
          display: inline-block;
      }
-
      .hamburger {
-              z-index: 999;
+         /*z-index: 999;
+         */
          display: block;
          position: absolute;
          right: 0;
@@ -88,7 +88,7 @@
          background-image: url(../assets/imgs/icons/shapes.svg);
          background-size: 50%;
      }
-     .menu {   
+     .menu {
          @include displayFlex;
          @include background;
          height: 100vh;
@@ -419,23 +419,45 @@
          .title {
              margin-bottom: 2vh;
          }
-         p {
-             margin-bottom: 5vh;
-             font-weight: 300;
-             a {
-                 background-color: $white-color;
-                 padding: 0.5vw;
+         form {
+             @include displayFlex;
+             flex-direction: column;
+             width: 20vw;
+             label,
+             input,
+             textarea,
+             button {
+                 width: 100%;
+             }
+             label {
+                 margin: 1vh 0;
+             }
+             input,
+             button {
+                 margin-bottom: 1vh;
+                 height: 5vh;
+                 padding: 10px;
+                 color: $black-color;
+             }
+             textarea {
+                 max-width: 100%;
+                 margin-bottom: 2vh;
+                 padding: 10px;
+                 color: $black-color;
+             }
+             button {
+                 background-color: $secondary-color;
+                 border: none;
+                 color: $white-color;
                  text-transform: uppercase;
-                 text-decoration: none;
-                 font-weight: 600;
-                 color: $secondary-color;
+                 font-size: 1.2em;
+                                         margin-bottom: 0;
+
+                 cursor: pointer;
                  &:hover {
-                     color: $primary-color;
+                     background-color: $primary-color;
                  }
              }
-         }
-         h4 {
-             margin: 1vh 0 5vh 0;
          }
      }
      /* FOOTER */

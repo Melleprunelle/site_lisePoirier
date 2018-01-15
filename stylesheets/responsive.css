@@ -71,6 +71,11 @@
     width: 40vw; }
   body .cv a button {
     font-size: 2.5em; }
+  body .contact form {
+    width: 80vw; }
+    body .contact form button {
+      height: 10vh;
+      padding: 0; }
   body .projects article div {
     height: 50vh; }
     body .projects article div div a {
@@ -78,6 +83,8 @@
     body .projects article div div h4 {
       font-size: 2.3em; }
     body .projects article div div p {
-      font-size: 1.2em; } }
+      font-size: 1.2em; }
+  body footer {
+    height: auto; } }
 
 /*# sourceMappingURL=responsive.css.map */
