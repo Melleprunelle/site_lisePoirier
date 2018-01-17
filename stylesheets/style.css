@@ -372,7 +372,8 @@ body {
       body .contact form input,
       body .contact form textarea,
       body .contact form button {
-        width: 100%; }
+        width: 100%;
+        border-radius: 0; }
       body .contact form label {
         margin: 1vh 0; }
       body .contact form input,
@@ -387,6 +388,10 @@ body {
         padding: 10px;
         color: #111; }
       body .contact form button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: #111;
         border: none;
         color: whitesmoke;

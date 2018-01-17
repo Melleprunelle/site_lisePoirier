@@ -242,15 +242,13 @@
             <p>Avec des paillettes en or tout est permis</p>
         </div>
         <form method="POST" action="mail.php" enctype="multipart/form-data">
-            <label for="name">Nom</label>
-            <input type="text" name="name" value="" required>
-            <label for="firstname">Prénom</label>
-            <input type="text" name="firstname" value="" required>
-            <label for="Mail">Email</label>
+            <label for="objet">Objet</label>
+            <input type="text" name="objet" value="" required>
+            <label for="mail">Email</label>
             <input type="email" name="mail" value="" required/>
             <label for="Commentaire">Message</label>
-            <textarea type="text" name="sujet" value="" cols="40" rows="10" maxlength="200" required></textarea>
-            <button type="submit" name="envoyer" value="Envoyer">Envoyer</button>
+            <textarea type="text" name="message" value="s" cols="40" rows="10" maxlength="200" placeholder="Pensez à indiquer votre nom et prénom à la fin de votre message..." required></textarea>
+            <button type="submit" value="Envoyer">Envoyer</button>
         </form>
         <div class="separator"></div>
     </section>
