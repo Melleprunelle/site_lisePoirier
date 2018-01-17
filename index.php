@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Lise Poirier</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
     <link rel="stylesheet" href="stylesheets/anicollection.css" media="screen and (min-width: 900px)">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/font/font-awesome-4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
@@ -243,7 +241,7 @@
             <h2>Contacter la licorne</h2>
             <p>Avec des paillettes en or tout est permis</p>
         </div>
-        <form name="inscription" method="POST" action="validation.php">
+        <form method="POST" action="mail.php" enctype="multipart/form-data">
             <label for="name">Nom</label>
             <input type="text" name="name" value="" required>
             <label for="firstname">Prénom</label>
