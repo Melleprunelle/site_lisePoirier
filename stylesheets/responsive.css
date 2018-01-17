@@ -1,81 +1,84 @@
 @media (max-width: 900px) {
-  body header,
-  body section,
-  body footer {
-    height: 100vh;
-    text-align: center; }
-    body header .separator,
-    body section .separator,
-    body footer .separator {
-      width: 5px; }
-    body header span,
-    body section span,
-    body footer span {
-      display: flex;
-      flex-direction: column;
-      width: auto;
-      color: transparent;
-      padding: 0;
-      margin: 0;
-      font-size: 0.5em; }
-      body header span img,
-      body section span img,
-      body footer span img {
-        width: 35vw;
-        margin: 0 auto; }
-    body header h1,
-    body section h1,
-    body footer h1 {
-      margin: 1vh auto;
-      font-size: 4em; }
-    body header h2,
-    body section h2,
-    body footer h2 {
-      font-size: 1.5em;
-      width: 80vw;
+  body {
+    /* NAVBAR */ }
+    body ul .tooltip .tooltip_text {
+      width: 40vw; }
+    body header,
+    body section,
+    body footer {
+      height: 100vh;
       text-align: center; }
-    body header .title h2,
-    body section .title h2,
-    body footer .title h2 {
-      width: 80vw;
-      font-size: 1em; }
-    body header .title p,
-    body section .title p,
-    body footer .title p {
-      width: 80vw;
-      font-size: 1em; }
-    body header article,
-    body section article,
-    body footer article {
-      display: block !important; }
-  body .savoir-etre article {
-    width: 70vw;
-    font-size: 0.9em; }
-    body .savoir-etre article div {
-      width: 100%; }
-      body .savoir-etre article div img {
-        width: 25vw;
-        opacity: 0.9; }
-      body .savoir-etre article div p {
-        margin-top: 0; }
-  body .cv img {
-    width: 40vw; }
-  body .cv a button {
-    font-size: 2.5em; }
-  body .contact form {
-    width: 80vw; }
-    body .contact form button {
-      height: 10vh;
-      padding: 0; }
-  body .projects article div {
-    height: 50vh; }
-    body .projects article div div a {
+      body header .separator,
+      body section .separator,
+      body footer .separator {
+        width: 5px; }
+      body header span,
+      body section span,
+      body footer span {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        color: transparent;
+        padding: 0;
+        margin: 0;
+        font-size: 0.5em; }
+        body header span img,
+        body section span img,
+        body footer span img {
+          width: 35vw;
+          margin: 0 auto; }
+      body header h1,
+      body section h1,
+      body footer h1 {
+        margin: 1vh auto;
+        font-size: 4em; }
+      body header h2,
+      body section h2,
+      body footer h2 {
+        font-size: 1.5em;
+        width: 80vw;
+        text-align: center; }
+      body header .title h2,
+      body section .title h2,
+      body footer .title h2 {
+        width: 80vw;
+        font-size: 1em; }
+      body header .title p,
+      body section .title p,
+      body footer .title p {
+        width: 80vw;
+        font-size: 1em; }
+      body header article,
+      body section article,
+      body footer article {
+        display: block !important; }
+    body .savoir-etre article {
+      width: 70vw;
+      font-size: 0.9em; }
+      body .savoir-etre article div {
+        width: 100%; }
+        body .savoir-etre article div img {
+          width: 25vw; }
+        body .savoir-etre article div p {
+          margin-top: 0; }
+    body .cv img {
+      width: 40vw; }
+    body .cv a button {
       font-size: 2.5em; }
-    body .projects article div div h4 {
-      font-size: 2.3em; }
-    body .projects article div div p {
-      font-size: 1.2em; }
-  body footer {
-    height: auto; } }
+    body .contact form {
+      width: 80vw; }
+      body .contact form button {
+        height: 10vh;
+        padding: 0; }
+    body .projects article div {
+      height: 50vh; }
+      body .projects article div div a {
+        font-size: 2.5em; }
+      body .projects article div div h4 {
+        font-size: 2.3em; }
+      body .projects article div div p {
+        font-size: 1.2em; }
+    body footer {
+      height: auto; } }
 
 /*# sourceMappingURL=responsive.css.map */

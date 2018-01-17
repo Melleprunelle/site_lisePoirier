@@ -26,6 +26,7 @@ body {
   /* CONTACT */
   /* FOOTER */ }
   body ul {
+    z-index: 999;
     margin: 0;
     margin-left: 10px;
     padding: 0;
@@ -76,7 +77,7 @@ body {
       margin-top: -5px;
       border-width: 5px;
       border-style: solid;
-      border-color: transparent #009EAD transparent transparent; }
+      border-color: transparent rgba(255, 255, 255, 0.5) transparent transparent; }
     body ul .tooltip:hover .tooltip_text {
       visibility: visible; }
   body header {
@@ -386,7 +387,7 @@ body {
         padding: 10px;
         color: #111; }
       body .contact form button {
-        background-color: #009EAD;
+        background-color: #111;
         border: none;
         color: whitesmoke;
         text-transform: uppercase;
@@ -394,6 +395,7 @@ body {
         margin-bottom: 0;
         cursor: pointer; }
         body .contact form button:hover {
+          transition: 0.5s;
           background-color: #FA6900; }
   body footer {
     display: flex;
